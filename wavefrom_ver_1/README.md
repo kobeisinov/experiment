@@ -10,14 +10,14 @@ Here's a breakdown of what the script does:
 2. The drawContent function is then called to start the animation. This function does the following:
 * Clears the entire canvas.
 * Iterates over a number of lines (lineNum). For each line, it does the following:
- ** Begins a new path for the line.
- ** Sets the line width and color.
- ** Iterates over a number of segments (segNum) in the line. For each segment, it does the following:
-  *** Calculates the x-coordinate of the segment (x).
-  *** Calls findNoise with px and py to get a noise value. This value is used to calculate the y-coordinate of the segment (y).
-  *** If it's the first segment, it moves the path to (x, y). Otherwise, it adds a line to (x, y).
+    * Begins a new path for the line.
+    * Sets the line width and color.
+    * Iterates over a number of segments (segNum) in the line. For each segment, it does the following:
+        * Calculates the x-coordinate of the segment (x).
+        * Calls findNoise with px and py to get a noise value. This value is used to calculate the y-coordinate of the segment (y).
+        * If it's the first segment, it moves the path to (x, y). Otherwise, it adds a line to (x, y).
 
- ** After iterating over all segments, it strokes the path to draw the line on the canvas.
+    * After iterating over all segments, it strokes the path to draw the line on the canvas.
 
 3. Finally, it calls requestAnimationFrame(drawContent) to schedule the next frame of the animation. This creates a loop that keeps the animation running cssscript.com.
 
