@@ -1,4 +1,6 @@
-# The logic of script.js
+# The logic of script.js ver.2
+
+![3 wavefrom animation](../images/ver2.png)
 
 The findNoise function in your code generates Perlin noise, which is a type of gradient noise often used in procedural content generation. It is especially useful for applications that need to simulate natural phenomena, due to its characteristic appearance and analytical properties cssscript.com.
 
@@ -9,7 +11,7 @@ Here's a breakdown of what the script does:
 1. It first sets up a canvas and gets its context. The canvas dimensions are set to match the window dimensions.
 2. The drawContent function is then called to start the animation. This function does the following:
 * Clears the entire canvas.
-* Iterates over a number of lines (lineNum). For each line, it does the following:
+* Iterates over a number of lines (2). For each line, it does the following:
     * Begins a new path for the line.
     * Sets the line width and color.
     * Iterates over a number of segments (segNum) in the line. For each segment, it does the following:
@@ -19,6 +21,8 @@ Here's a breakdown of what the script does:
 
     * After iterating over all segments, it strokes the path to draw the line on the canvas.
 
-3. Finally, it calls requestAnimationFrame(drawContent) to schedule the next frame of the animation. This creates a loop that keeps the animation running cssscript.com.
+3. It fills the area between two paths.
+
+4. Finally, it calls requestAnimationFrame(drawContent) to schedule the next frame of the animation. This creates a loop that keeps the animation running cssscript.com.
 
 The result is an animation of multiple wavy lines moving down the canvas. The findNoise function is key to this effect, as it generates the smoothly varying noise values that make the lines wavy and animate them over time.

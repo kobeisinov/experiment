@@ -1,5 +1,7 @@
 # The logic of script.js
 
+![waveform animation](../images/ver1.png)
+
 The findNoise function in your code generates Perlin noise, which is a type of gradient noise often used in procedural content generation. It is especially useful for applications that need to simulate natural phenomena, due to its characteristic appearance and analytical properties cssscript.com.
 
 In your code, the findNoise function is used to create a "wavy" effect in a canvas animation. It does this by generating a noise value for each point (px, py) on a line, and then using this value to adjust the y-coordinate of the point. This has the effect of making the line "wavy", because the noise value varies smoothly as px and py change, causing the y-coordinate to oscillate up and down in a smooth wave-like pattern. The time variable is added to the py coordinate to create an animation effect, as the noise values will change over time, causing the waves to move.
