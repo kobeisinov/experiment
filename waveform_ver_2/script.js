@@ -43,6 +43,10 @@ segNum = 250, // it increases the # of peaks
 lineWidth = centerY/1.5, // width of tape (diff between 1st ad last lines??)
 lineNum = 100; // band consists of this number of lines 
 
+let gradient = ctx.createLinearGradient(0, 0, canvas.width, canvas.height);
+gradient.addColorStop(0, 'red'); // 0 is start, 1 is the end
+gradient.addColorStop(1, 'orange');
+
 window.addEventListener('resize', function(){
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
