@@ -1,0 +1,32 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #555;
+    background: #333;
+    margin: 3em;
+    /* izi */
+}
+/* The minmax() CSS function defines 
+a size range greater than or equal to min and less than or equal to max. 
+It is used with CSS Grids. */
+
+/*  fr unit represents a fraction of the available space in the grid container.  */
+
+.portfolio {
+    padding: 1em;
+    display: grid;
+    grip-template-columns: repeat(auto-fill, minmax(200mx, 1fr)); /* main example */
+    /* without minmax auto-fill won't do its magic*/
+    grid-gap: 1em;
+}
+
+.portfolio-title {
+    text-align: center;
+    color: #00c896;
+    grid-column: 1/-1; /* ? */
+}
+
+img {
+    max-width: 100%;
+}
+
+/* src code is absent, so site is broken */
